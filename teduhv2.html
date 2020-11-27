@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Rizqi Widianto - Teduh New Version</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Teduh New Version</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="resume.html">Resume</a></li>
+							<li class="active"><a href="teduhv2.html">Teduh New Version</a></li>
+						</ul>
+						<ul class="icons">
+                            <!-- Nanti diganti sama yang udah ada linknya -->
+                            <li><a href="https://www.linkedin.com/in/rizqiwidianto/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://apps.apple.com/bn/app/teduh/id1526440753" class="icon brands fa-app-store"><span class="label">App Store</span></a></li>
+							<li><a href="https://github.com/Rizqiwidianto14" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">November 24, 2020</span>
+									<h1>Teduh<br />
+									New Version</h1>
+								</header>
+								<div class="image main"><img src="images/Teduh.jpeg" alt="" /></div>
+								<p> <b>Technology Used In This Project: </b> <br>
+									UIKit, AVFoundation, UIIntents, CoreData  <br>
+									<b>Lesson Learned: </b> <br>
+									CoreData, UIIntents, Autolayout,Expendable Cell, SceneDelegate, AppDelegate, Develop for Lower iOS Version
+								</p>
+								<p>
+									<b>Research Story</b> <br>
+									After Teduh successfully launched in the AppStore, we received a lot of feedback from our users, 
+									one of those feedbacks is: <b>Using SwiftUI makes users with iOS under iOS 13 unable to use our application.</b>  
+									We also see several weaknesses in our application, one of our weaknesses is on the user experience side. 
+									We see that even though the user experience of our application is quite intuitive, 
+									the user cannot interact more when running a session in Teduh. <br>
+									Therefore, in the final challenge at the Apple Developer Academy, we decided to continue the development of Teduh. 
+									The first step we take is to make as many guiding questions as possible regarding the advantages and disadvantages of shade. 
+									After that, we tried to compile the guiding question into interview questions to ask our users. <br>
+									We interviewed six of our users. We try to ask simple but fundamental questions like: 
+									"Would you like to use a recording session without having to go through a grounding session?" 
+									From the interview, we got data that: Our users want freedom when using Teduh. <br>
+									We interviewed six of our users. We try to ask simple but fundamental questions like: 
+									"Would you like to use a recording session without having to go through a grounding session?" 
+									From the interview, we got conclusion that: <b>Our users want freedom when using Teduh. </b> 
+									
+
+								</p>
+																	
+									<b>Technical Story</b> <br>
+									<p>
+									Finally, we totally changed Teduh's user interface and user experience. 
+									One of the big changes we made was: We allowed our users to write journals in the Teduh, 
+									without even having to follow a session, added a Siri Shortcut, added dark mode, and added language settings using 
+									localization. Due to the weakness of SwiftUI that it can't be run on iOS 13 and below and many of our users who want 
+									Teduh to be present in those iOS versions, we are redeveloping this application using the UI Kit. Here are my responsibilities as an iOS Engineer at Teduh:
+									</p>
+
+
+									<li><b>Data Storage System using CoreData</b></li>
+									
+										I was again responsible for creating a data storage system for journal results, audio, journal dates, but in this project, 
+										I used core data to store more data effectively. I divide the data entities in the shade application into 
+										these several attributes:
+
+									<li>audioData: String -> Save Audio Title for fetching with URL.</li>
+									<li>audioEmpty: Boolean -> Indicates whether the journal has audio</li>
+									<li>notesData: String -> a string which is the user's writing in textview</li>
+									<li>notesEmpty: Boolean -> Indicates whether the journal has text
+									</li>
+									<li>sessionDate: Date -> Save Data which is the time when the user performs a session record
+									</li>
+									<li>sessionName: String -> Saves the session name which the user chooses when saving the journal</li>
+									<br>
+									<li><b>UIComponent On RecordJournal and JournalViewController</b></li> 
+
+									<p>
+										I am also responsible for creating all views in the journal session page and the journal view. 
+										I use segmented control, textview, and scrollview on the journal session page. 
+										On the journal view page,I am asked to create a tableview so that it can be expanded when selected. 
+										I tried to use the lines of text in the tableview to change the size of the dynamic tableview.
+										 This allows the tableview to be expanded when touched.
+									</p>
+									<div class="box alt">
+										<div class="row gtr-50 gtr-uniform">
+											<div class="col-4"><span class="image fit"><img src="images/JournalClose.jpg" alt="" /></span></div>	
+											<div class="col-4"><span class="image fit"><img src="images/JournalExpand.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/textview.jpg" alt="" /></span></div>	
+											<div class="col-4"><span class="image fit"><img src="images/record.jpg" alt="" /></span></div>
+										</div>
+									</div>
+									<li><b>Siri Shortcut</b></li>
+
+									 <p>
+										Lastly, I am responsible for creating a series of shortcuts on Teduh. 
+										The Siri shortcut will automatically open a user-selected first aid session in the Teduh. 
+										The existence of a series of shortcuts allows users to quickly start a session if they experience a panic attack. 
+										I learned to use UIIntents in creating a series of shortcuts. 
+										I also learned about the app cycle when installing a series shortcut in the delegate and app delegate scenes.
+
+									</p>
+									<div class="box alt">
+										<div class="row gtr-50 gtr-uniform">
+											<div class="col-4"><span class="image fit"><img src="images/SiriImage.jpg" alt="" /></span></div>	
+										</div>
+									</div>
+
+							</section>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+                        <section class="alt">
+                            <h3>Address</h3>
+                            <p>Jl. Mujair No 17 RT 02 RW 08 <br />
+                            Jatiraden, Jatisampurna, Kota Bekasi</p>
+                        </section>
+                        <section>
+                            <h3>Phone</h3>
+                            <p><a href="#">+62 812 80512107</a></p>
+                        </section>
+                        <section>
+                            <h3>Email</h3>
+                            <p><a href="#">rizqi.imam@ui.ac.id</a></p>
+                        </section>
+                        <section>
+                            <h3>Social</h3>
+                            <ul class="icons alt">
+                                <li><a href="https://www.linkedin.com/in/rizqiwidianto/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+                                <li><a href="https://apps.apple.com/bn/app/teduh/id1526440753" class="icon brands alt fa-app-store"><span class="label">Appstore</span></a></li>
+                                <li><a href="https://github.com/Rizqiwidianto14" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                            </ul>
+                        </section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
